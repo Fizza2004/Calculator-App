@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.min.js"></script>
+  <script src="./assets/scripts/index.js" defer></script>
+</head>
+<body class="m-0 flex justify-center items-center h-screen">
+  <header></header>
+  <main>
+    <section id="calculator">
+      <div class="calculator-wrapper w-96  shadow-2xl p-5 bg-yellow-100">
+        <div class="calc-header-wrapper mb-3.5">
+          <input type="text" id="display" readonly class="border-2 h-10 border-black bg-blue-300 w-64 mr-0 px-4 py-1">
+          <button class="clear-button bg-red-600 w-16 text-white text-base border-2 border-black p-0.5 py-1 cursor-pointer">C</button>
+        </div>
+        <div class="calc-main-buttons-wrapper grid grid-cols-4 gap-2">
+          <button class="h-12 border-2 border-gray-500 w-20 cursor-pointer rounded calc-btn">7</button>
+          <button class="h-12 border-2 border-gray-500 w-20 cursor-pointer rounded calc-btn">8</button>
+          <button class="h-12 border-2 border-gray-500 w-20 cursor-pointer rounded calc-btn">9</button>
+          <button class="h-12 border-2 border-gray-500 w-20 bg-yellow-400 cursor-pointer calc-btn">/</button>
+          <button class="h-12 border-2 border-gray-500 w-20 cursor-pointer rounded calc-btn">4</button>
+          <button class="h-12 border-2 border-gray-500 w-20 cursor-pointer rounded calc-btn">5</button>
+          <button class="h-12 border-2 border-gray-500 w-20 cursor-pointer rounded calc-btn">6</button>
+          <button class="h-12 border-2 border-gray-500 w-20 bg-yellow-400 cursor-pointer calc-btn">*</button>
+          <button class="h-12 border-2 border-gray-500 w-20 cursor-pointer rounded calc-btn">1</button>
+          <button class="h-12 border-2 border-gray-500 w-20 cursor-pointer rounded calc-btn">2</button>
+          <button class="h-12 border-2 border-gray-500 w-20 cursor-pointer rounded calc-btn">3</button>
+          <button class="h-12 border-2 border-gray-500 w-20 bg-yellow-400 cursor-pointer calc-btn">-</button>
+          <button class="h-12 border-2 border-gray-500 w-20 cursor-pointer rounded calc-btn">0</button>
+          <button class="h-12 border-2 border-gray-500 w-20 cursor-pointer rounded calc-btn">.</button>
+          <button class="h-12 border-2 border-gray-500 w-20 cursor-pointer rounded equal-button">=</button>
+          <button class="h-12 border-2 border-gray-500 w-20 bg-yellow-400 cursor-pointer calc-btn">+</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>
